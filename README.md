@@ -3,9 +3,6 @@
 
 ## Installation
 
-Utilizar el protocolo estandar para una instalación de symfony
-
-
 ```sh
 cd clicars_test
 composer install
