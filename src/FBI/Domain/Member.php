@@ -19,6 +19,11 @@ class Member
     /**
      * @var Member
      */
+    private $subordinates;
+
+    /**
+     * @var Member
+     */
     private $boss;
 
    /**
@@ -69,6 +74,21 @@ class Member
     public function getBoss(): Member
     {
         return $this->boss;
+    }
+
+    /**
+     * @param Member $subordinates
+     */
+    public function setSubordinates(Member $subordinates) {
+        $this->subordinates = $subordinates;
+    }
+
+    /**
+     * @return Member
+     */
+    public function getSubordinates(): Member
+    {
+        return $this->subordinates;
     }
 
     /**
